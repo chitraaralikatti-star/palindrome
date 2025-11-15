@@ -8,11 +8,11 @@ if len(sys.argv) == 2:
     text = sys.argv[1]  # Take input from system argument
     print("User provided input:")
 else:
-    print("No command-line input provided. Using manual input:")
-    text = input("Enter a string: ")  # Manual input when no argument is passed
+    print("No command-line input provided. Using default value:")
+    text = "8"  # Default value
 
 # Check palindrome
 if text == text[::-1]:
-    print("It is a palindrome.")
+    print(f"'{text}' is a palindrome.")
 else:
-    print("It is not a palindrome.")
+    print(f"'{text}' is not a palindrome.")
